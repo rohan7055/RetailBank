@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Retail Bank Management System</title>
+</head>
+<body>
+<h1 align="center">Welcome to Retail Bank Management System API</h1>
+<hr>
+
+<h2>LOGIN</h2><br>
+<form action="user/login" method="post">
+	<table >
+		<tr>
+			<td> SSN : </td>
+			<td> <input type="number" name="ssn" placeholder="Enter your SSN"> </td>
+		</tr>
+		<tr>
+			<td> Password : </td>
+			<td> <input type="password" name="password" placeholder="Enter password"> </td>
+		</tr>
+		<tr>
+			
+			<td colspan="2"> <input type="submit" value="Login" > </td>
+		</tr>
+	</table>
+</form>
+
+<hr>
+
+<h2>REGISTER</h2><br>
+
+
+<table>
+	<form  action="user/register" method="post">
+		<tr> 
+			<td> SSN : </td>
+			<td> <input type="number" name="ssn" placeholder="Enter SSN"> </td>
+		</tr>
+		<tr>
+			<td> Name : </td>
+			<td> <input type="text" name="cust_name" placeholder="Enter customer name"></td>
+		</tr>
+		<tr>
+			<td> Address : </td>
+			<td> <textarea cols="25" rows="2" name="cust_addr"> </textarea></td>
+		</tr>
+		<tr>
+			<td> Age : </td>
+			<td> <input type="number" name="cust_age" placeholder="Enter age"> </td>
+		</tr>
+		<tr>
+			<td> City : </td>
+			<td> <input type="text" name="cust_city" placeholder="Enter City"></td>
+		</tr>
+		<tr>
+			<td> State : </td>
+			<td> 
+				<select name="cust_state">
+					<option selected> Select </option>
+					<option value="Andhra Pradesh"> Andhra Pradesh</option>
+					<option value="Gujarat"> Gujarat </option>
+					<option value="Rajasthan"> Rajasthan</option>
+					<option value="UP"> UP</option>
+					<option value="Kerala"> Kerala </option>
+					<option value="MP"> MP </option>
+					<option value="West Bengal"> West Bengal </option>
+					<option value="Uttrakhand">Uttrakhand</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			
+			<td colspan="2"> <input type="submit" value="Register" > </td>
+		</tr>
+	</form>
+</table>
+
+
+
+
+</body>
+</html>
